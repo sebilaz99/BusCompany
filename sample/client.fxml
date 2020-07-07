@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="504.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ListView fx:id="sourceCityList" layoutX="36.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" />
+        <ListView fx:id="destinationList" layoutX="268.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" />
+        <Button fx:id="sourcesB" layoutX="59.0" layoutY="214.0" mnemonicParsing="false" onAction="#getSources_handler" text="CHOOSE SOURCE CITY" />
+        <ListView fx:id="routeListCLient" layoutX="36.0" layoutY="249.0" prefHeight="200.0" prefWidth="200.0" />
+        <Button fx:id="routesB" layoutX="78.0" layoutY="464.0" mnemonicParsing="false" onAction="#getRoutesHandler" text="SHOW ROUTES" />
+        <Button fx:id="buyTicketB" layoutX="427.0" layoutY="336.0" mnemonicParsing="false" onAction="#buyTicket_handler" text="BOOK TICKETS" />
+        <TextField fx:id="ticketText" layoutX="427.0" layoutY="297.0" />
+        <Label layoutX="359.0" layoutY="301.0" text="Nr tickets:" />
+        <TextField fx:id="priceText" layoutX="386.0" layoutY="426.0" />
+      <Button fx:id="destinationsB" layoutX="269.0" layoutY="214.0" mnemonicParsing="false" onAction="#getDestinations_handler" prefHeight="26.0" prefWidth="193.0" text="CHOOSE DESTINATION" />
+    </children>
+</AnchorPane>
